@@ -36,3 +36,15 @@ webpage6 = webpage_in6.content
 htmldataforwebpage6 = BeautifulSoup(webpage_in6.content, "html.parser")
 current_solana_price = htmldataforwebpage6.td
 print(str(current_solana_price) + " is the current Solana price (in USD)")
+
+webpage_in7 = requests.get("https://coinmarketcap.com/currencies/xrp/")
+webpage7 = webpage_in7.content
+htmldataforwebpage7 = BeautifulSoup(webpage_in7.content, "html.parser")
+current_xrp_price = htmldataforwebpage7.td
+print(str(current_xrp_price) + " is the current XRP price (in USD)")
+
+webpage_in8 = requests.get("https://coinmarketcap.com/currencies/dogecoin/")
+webpage8 = webpage_in8.content
+htmldataforwebpage8 = BeautifulSoup(webpage_in8.content, "html.parser")
+current_dogecoin_price = htmldataforwebpage8.td
+print(str(current_dogecoin_price) + " is the current Dogecoin price (such crypto, very wow)")
