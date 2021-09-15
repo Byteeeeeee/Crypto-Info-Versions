@@ -66,3 +66,27 @@ webpage01 = webpage_in01.content
 htmldataforwebpage01 = BeautifulSoup(webpage_in01.content, "html.parser")
 current_uniswap_price = htmldataforwebpage01.td
 print(str(current_uniswap_price) + " is the current Uniswap price (in USD)")
+
+webpage_in02 = requests.get("https://coinmarketcap.com/currencies/chainlink/")
+webpage02 = webpage_in02.content
+htmldataforwebpage02 = BeautifulSoup(webpage_in02.content, "html.parser")
+current_usdcoin_price = htmldataforwebpage02.td
+print(str(current_usdcoin_price) + " is the current Chainlink price (in USD)")
+
+webpage_in03 = requests.get("https://coinmarketcap.com/currencies/terra/")
+webpage03 = webpage_in03.content
+htmldataforwebpage03 = BeautifulSoup(webpage_in03.content, "html.parser")
+current_terra_price = htmldataforwebpage03.td
+print(str(current_terra_price) + " is the current Terra price (in USD)")
+
+webpage_in04 = requests.get("https://coinmarketcap.com/currencies/litecoin/")
+webpage04 = webpage_in04.content
+htmldataforwebpage04 = BeautifulSoup(webpage_in04.content, "html.parser")
+current_litecoin_price = htmldataforwebpage04.td
+print(str(current_litecoin_price) + " is the current Litecoin price (in USD)")
+
+webpage_in05 = requests.get("https://coinmarketcap.com/currencies/binance-usd/")
+webpage05 = webpage_in05.content
+htmldataforwebpage05 = BeautifulSoup(webpage_in05.content, "html.parser")
+current_binanceusd_price = htmldataforwebpage05.td
+print(str(current_binanceusd_price) + " is the current Binance USD price (in USD)")
