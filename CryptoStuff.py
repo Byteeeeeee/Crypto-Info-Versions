@@ -90,3 +90,15 @@ webpage05 = webpage_in05.content
 htmldataforwebpage05 = BeautifulSoup(webpage_in05.content, "html.parser")
 current_binanceusd_price = htmldataforwebpage05.td
 print(str(current_binanceusd_price) + " is the current Binance USD price (in USD)")
+
+webpage_in06 = requests.get("https://coinmarketcap.com/currencies/bitcoin-cash/")
+webpage06 = webpage_in06.content
+htmldataforwebpage06 = BeautifulSoup(webpage_in06.content, "html.parser")
+current_btccash_price = htmldataforwebpage06.td
+print(str(current_btccash_price) + " is the current Bitcoin Cash price (in USD)")
+
+webpage_in07 = requests.get("https://coinmarketcap.com/currencies/avalanche/")
+webpage07 = webpage_in07.content
+htmldataforwebpage07 = BeautifulSoup(webpage_in07.content, "html.parser")
+current_ava_price = htmldataforwebpage07.td
+print(str(current_ava_price) + " is the current Avalanche price (in USD)")
