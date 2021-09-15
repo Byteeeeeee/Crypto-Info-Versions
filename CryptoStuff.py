@@ -48,3 +48,21 @@ webpage8 = webpage_in8.content
 htmldataforwebpage8 = BeautifulSoup(webpage_in8.content, "html.parser")
 current_dogecoin_price = htmldataforwebpage8.td
 print(str(current_dogecoin_price) + " is the current Dogecoin price (such crypto, very wow)")
+
+webpage_in9 = requests.get("https://coinmarketcap.com/currencies/polkadot/")
+webpage9 = webpage_in9.content
+htmldataforwebpage9 = BeautifulSoup(webpage_in9.content, "html.parser")
+current_dot_price = htmldataforwebpage9.td
+print(str(current_dot_price) + " is the current Polkadot price (in USD)")
+
+webpage_in0 = requests.get("https://coinmarketcap.com/currencies/usd-coin/")
+webpage0 = webpage_in0.content
+htmldataforwebpage0 = BeautifulSoup(webpage_in0.content, "html.parser")
+current_usdcoin_price = htmldataforwebpage0.td
+print(str(current_usdcoin_price) + " is the current USD Coin price (in USD, obviously)")
+
+webpage_in01 = requests.get("https://coinmarketcap.com/currencies/uniswap/")
+webpage01 = webpage_in01.content
+htmldataforwebpage01 = BeautifulSoup(webpage_in01.content, "html.parser")
+current_uniswap_price = htmldataforwebpage01.td
+print(str(current_uniswap_price) + " is the current Uniswap price (in USD)")
