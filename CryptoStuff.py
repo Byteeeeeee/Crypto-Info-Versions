@@ -102,3 +102,21 @@ webpage07 = webpage_in07.content
 htmldataforwebpage07 = BeautifulSoup(webpage_in07.content, "html.parser")
 current_ava_price = htmldataforwebpage07.td
 print(str(current_ava_price) + " is the current Avalanche price (in USD)")
+
+webpage_in08 = requests.get("https://coinmarketcap.com/currencies/algorand/")
+webpage08 = webpage_in08.content
+htmldataforwebpage08 = BeautifulSoup(webpage_in08.content, "html.parser")
+current_alga_price = htmldataforwebpage08.td
+print(str(current_alga_price) + " is the current Algorand price (in USD)")
+
+webpage_in09 = requests.get("https://coinmarketcap.com/currencies/wrapped-bitcoin/")
+webpage09 = webpage_in09.content
+htmldataforwebpage09 = BeautifulSoup(webpage_in09.content, "html.parser")
+current_wb_price = htmldataforwebpage09.td
+print(str(current_wb_price) + " is the current Wrapped Bitcoin price (in USD)")
+
+webpage_in00 = requests.get("https://coinmarketcap.com/currencies/internet-computer/")
+webpage00 = webpage_in00.content
+htmldataforwebpage00 = BeautifulSoup(webpage_in00.content, "html.parser")
+current_intcomp_price = htmldataforwebpage00.td
+print(str(current_intcomp_price) + " is the current Internet Computer price (in USD)")
