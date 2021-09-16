@@ -120,3 +120,27 @@ webpage00 = webpage_in00.content
 htmldataforwebpage00 = BeautifulSoup(webpage_in00.content, "html.parser")
 current_intcomp_price = htmldataforwebpage00.td
 print(str(current_intcomp_price) + " is the current Internet Computer price (in USD)")
+
+webpage_in001 = requests.get("https://coinmarketcap.com/currencies/ethereum-classic/")
+webpage001 = webpage_in001.content
+htmldataforwebpage001 = BeautifulSoup(webpage_in001.content, "html.parser")
+current_etc_price = htmldataforwebpage001.td
+print(str(current_etc_price) + " is the current Ethereum Classic price (in USD)")
+
+webpage_in002 = requests.get("https://coinmarketcap.com/currencies/axie-infinity/")
+webpage002 = webpage_in002.content
+htmldataforwebpage002 = BeautifulSoup(webpage_in002.content, "html.parser")
+current_axie_price = htmldataforwebpage002.td
+print(str(current_axie_price) + " is the current Axie Infinity Token price (in USD)")
+
+webpage_in003 = requests.get("https://coinmarketcap.com/currencies/aave/")
+webpage003 = webpage_in003.content
+htmldataforwebpage003 = BeautifulSoup(webpage_in003.content, "html.parser")
+current_aave_price = htmldataforwebpage003.td
+print(str(current_aave_price) + " is the current Aave price (in USD)")
+
+webpage_in004 = requests.get("https://coinmarketcap.com/currencies/pancakeswap/")
+webpage004 = webpage_in004.content
+htmldataforwebpage004 = BeautifulSoup(webpage_in004.content, "html.parser")
+current_pcake_price = htmldataforwebpage004.td
+print(str(current_pcake_price) + " is the current PancakeSwap price (in USD)")
